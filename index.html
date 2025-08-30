@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pro Custom ROM Service | Faster, Cleaner Android</title>
+  <meta name="description" content="Premium custom ROM setup, root, debloat, and performance tuning. Safe process, verified ownership, and post‑flash support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    :root {
+      --bg: #0b0f12;
+      --card: #12181e;
+      --text: #e7edf3;
+      --muted: #a7b1bb;
+      --brand: #5eead4;
+      --brand-2: #60a5fa;
+      --danger: #f87171;
+      --ok: #34d399;
+      --ring: rgba(94,234,212,.35);
+    }
+    * { box-sizing: border-box }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif }
+    a { color: var(--brand) }
+    .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 20px }
+    header { position: sticky; top: 0; backdrop-filter: blur(8px); background: rgba(11,15,18,.7); border-bottom: 1px solid #1e252c; z-index: 50 }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0 }
+    .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .3px }
+    .logo-badge { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); display: grid; place-items: center; color: #0b0f12; font-weight: 900 }
+    .nav-links { display: flex; gap: 16px; flex-wrap: wrap }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 10px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #0b0f12; font-weight: 700; border: 0; cursor: pointer; text-decoration: none }
+    .btn.secondary { background: #1b232b; color: var(--text); border: 1px solid #26303a }
+    .btn.small { padding: 8px 12px; font-weight: 600 }
+    .tag { display: inline-block; padding: 4px 10px; border-radius: 999px; background: #112028; color: var(--brand); border: 1px solid #1d3139; font-size: 12px; letter-spacing: .3px }
+    .hero { padding: 72px 0 36px; }
+    .hero h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.15; margin: 14px 0 }
+    .hero p { color: var(--muted); max-width: 720px }
+    .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px }
+    .grid { display: grid; gap: 16px }
+    .card { background: var(--card); border: 1px solid #1b232b; border-radius: 14px; padding: 18px }
+    .card h3 { margin: 0 0 6px 0 }
+    section { padding: 32px 0 }
+    .kpis { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: 14px }
+    .kpi { background: #0f151b; border: 1px solid #1b232b; border-radius: 12px; padding: 12px; color: var(--muted) }
+    .kpi strong { color: var(--text); font-size: 18px }
+    .list { display: grid; gap: 10px; margin: 10px 0 0 }
+    .list li { list-style: none; display: grid; grid-template-columns: 24px 1fr; gap: 10px; align-items: start }
+    .dot { width: 10px; height: 10px; border-radius: 2px; margin-top: 6px; background: linear-gradient(135deg, var(--brand), var(--brand-2)) }
+    .cols-3 { display: grid; grid-template-columns: 1fr; gap: 16px }
+    .cols-2 { display: grid; grid-template-columns: 1fr; gap: 16px }
+    .price { font-size: 22px; font-weight: 800 }
+    .muted { color: var(--muted) }
+    .faq details { background: var(--card); border: 1px solid #1b232b; border-radius: 12px; padding: 12px 14px }
+    .faq summary { cursor: pointer; font-weight: 600 }
+    .testi { display: grid; gap: 12px }
+    .contact { display: grid; gap: 14px }
+    input, select, textarea { width: 100%; padding: 12px 12px; border-radius: 10px; border: 1px solid #26303a; background: #0f151b; color: var(--text) }
+    input:focus, textarea:focus, select:focus { outline: 2px solid var(--ring); border-color: transparent }
+    footer { padding: 28px 0 60px; color: var(--muted) }
+    .tiny { font-size: 12px; line-height: 1.45 }
+    @media (min-width: 720px) {
+      .cols-3 { grid-template-columns: repeat(3, 1fr) }
+      .cols-2 { grid-template-columns: repeat(2, 1fr) }
+      .hero { padding: 96px 0 48px }
+      .kpis { grid-template-columns: repeat(4,1fr) }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <div class="logo-badge">R</div>
+          <span>ROM Studio</span>
+        </div>
+        <div class="nav-links">
+          <a class="btn small secondary" href="#services">Services</a>
+          <a class="btn small secondary" href="#devices">Devices</a>
+          <a class="btn small secondary" href="#pricing">Pricing</a>
+          <a class="btn small" href="#contact">Book a Slot</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="tag">Professional Custom ROM Setup</span>
+        <h1>Faster, Cleaner Android — Safely Installed for You</h1>
+        <p>We install and fine‑tune leading custom ROMs with owner verification, safe backup guidance, and post‑flash support. Get a smooth, private, bloat‑free experience without the headaches.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#contact">Book a Slot</a>
+          <a class="btn secondary" href="#pricing">See Pricing</a>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><strong>2500+</strong><br/>successful flashes</div>
+          <div class="kpi"><strong>4.9/5</strong><br/>customer rating</div>
+          <div class="kpi"><strong>7‑day</strong><br/>after‑care support</div>
+          <div class="kpi"><strong>Same‑day</strong><br/>slots available</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container grid cols-3">
+        <div class="card">
+          <h3>Custom ROM Install</h3>
+          <p class="muted">LineageOS, crDroid, Pixel Experience and more — clean flash with integrity checks.</p>
+          <ul class="list">
+            <li><span class="dot"></span><span>Safety checks and verification</span></li>
+            <li><span class="dot"></span><span>OTA/update guidance</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Root & Magisk</h3>
+          <p class="muted">Optional root with curated modules and SafetyNet/Play Integrity advice.</p>
+          <ul class="list">
+            <li><span class="dot"></span><span>Module setup and hygiene</span></li>
+            <li><span class="dot"></span><span>App compatibility guidance</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Debloat & Performance</h3>
+          <p class="muted">Remove bloat, optimize kernel and scheduler for battery and responsiveness.</p>
+          <ul class="list">
+            <li><span class="dot"></span><span>Battery‑first tuning</span></li>
+            <li><span class="dot"></span><span>Per‑app controls</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="devices">
+      <div class="container card">
+        <h3>Supported Devices</h3>
+        <p class="muted">Popular models from Xiaomi/Redmi/Poco, OnePlus, Nothing, Motorola, Pixel, and select Samsung (bootloader‑unlockable models).</p>
+        <div class="grid cols-2">
+          <div>
+            <ul class="list">
+              <li><span class="dot"></span><span>Poco F‑series, Redmi Note series</span></li>
+              <li><span class="dot"></span><span>OnePlus 6–11, Nord series</span></li>
+              <li><span class="dot"></span><span>Nothing Phone (1)/(2)</span></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="list">
+              <li><span class="dot"></span><span>Motorola G/Edge series</span></li>
+              <li><span class="dot"></span><span>Google Pixel 3–8</span></li>
+              <li><span class="dot"></span><span>Samsung models that support BL unlock</span></li>
+            </ul>
+          </div>
+        </div>
+        <p class="muted tiny">Don’t see your device? Share model number and current build in the booking form.</p>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container grid cols-3">
+        <div class="card">
+          <h3>Basic Flash</h3>
+          <p class="muted">Clean install + verification</p>
+          <div class="price"></div>
+          <ul class="list">
+            <li><span class="dot"></span><span>ROM flash and setup</span></li>
+            <li><span class="dot"></span><span>Integrity checks</span></li>
+          </ul>
+          <a class="btn" href="#contact">Book</a>
+        </div>
+        <div class="card">
+          <h3>Pro Setup</h3>
+          <p class="muted">Flash + debloat + Magisk</p>
+          <div class="price"></div>
+          <ul class="list">
+            <li><span class="dot"></span><span>Debloat & tuning</span></li>
+            <li><span class="dot"></span><span>Root & module setup</span></li>
+          </ul>
+          <a class="btn" href="#contact">Book</a>
+        </div>
+        <div class="card">
+          <h3>Unbrick/Complex</h3>
+          <p class="muted">Assessment + quote</p>
+          <div class="price">From </div>
+          <ul class="list">
+            <li><span class="dot"></span><span>EDL/fastboot workflows</span></li>
+            <li><span class="dot"></span><span>Case‑by‑case</span></li>
+          </ul>
+          <a class="btn" href="#contact">Start Assessment</a>
+        </div>
+      </div>
+      <div class="container">
+        <p class="muted tiny">Add‑ons: Backup/restore ₹499, Kernel tune ₹499. Pricing may vary for rare devices or locked/encrypted states.</p>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container grid cols-3">
+        <div class="card">
+          <h3>1. Assessment</h3>
+          <p class="muted">We confirm model, build, bootloader status, and your goals (battery, privacy, performance).</p>
+        </div>
+        <div class="card">
+          <h3>2. Backup & Unlock</h3>
+          <p class="muted">You back up data; with proof of ownership we help unlock the bootloader when applicable.</p>
+        </div>
+        <div class="card">
+          <h3>3. Flash & Verify</h3>
+          <p class="muted">We flash, verify integrity, run checks, and walk you through updates and safety.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="container grid">
+        <h3>FAQs</h3>
+        <details><summary>Will this void my warranty?</summary><p class="muted">Bootloader unlocking may void warranty on many brands. Some allow relock on stock ROM. We’ll advise for your model.</p></details>
+        <details><summary>Is my data safe?</summary><p class="muted">Flashing can wipe data. We guide backups, but you are responsible for your data. We do not keep your data.</p></details>
+        <details><summary>Is this legal?</summary><p class="muted">We only work on devices you own and do not bypass FRP, DRM, or carrier locks. Proof of ownership is required.</p></details>
+        <details><summary>Turnaround time?</summary><p class="muted">Most jobs: 1–3 hours with an appointment. Complex/unbrick cases vary.</p></details>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container grid cols-2">
+        <div class="card">
+          <p>“Phone feels brand new. Battery life jumped and no ads. Worth it.”</p>
+          <p class="muted tiny">— A. Mehta</p>
+        </div>
+        <div class="card">
+          <p>“They explained each step and handled backups properly. Smooth experience.”</p>
+          <p class="muted tiny">— R. Khan</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container card">
+        <h3>Book a Slot</h3>
+        <p class="muted">mahagon yavatmal • In‑person and remote service available. UPI, cards, and wallets accepted.</p>
+        <form class="contact" id="bookingForm">
+          <div class="cols-2">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div>
+              <label for="phone">WhatsApp/Phone</label>
+              <input id="phone" name="phone" placeholder="+91‑XXXXXXXXXX" required />
+            </div>
+          </div>
+          <div class="cols-2">
+            <div>
+              <label for="device">Device & Model</label>
+              <input id="device" name="device" placeholder="e.g., Poco F3 / M2012K11AG" required />
+            </div>
+            <div>
+              <label for="build">Current Build</label>
+              <input id="build" name="build" placeholder="Settings → About phone → Build number" />
+            </div>
+          </div>
+          <div class="cols-2">
+            <div>
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option>Basic Flash</option>
+                <option>Pro Setup</option>
+                <option>Unbrick/Complex</option>
+              </select>
+            </div>
+            <div>
+              <label for="slot">Preferred Date/Time</label>
+              <input id="slot" name="slot" type="datetime-local" />
+            </div>
+          </div>
+          <div>
+            <label for="notes">Notes / Goals</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Battery focus, privacy, specific ROM, etc."></textarea>
+          </div>
+          <div class="cols-2">
+            <button class="btn" type="submit">Request Booking</button>
+            <a class="btn secondary" href="https://wa.me/919322961032" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </div>
+          <p class="tiny muted">By requesting a slot, you confirm you own the device and consent to bootloader unlock/flash where required.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="tiny">© <span id="year"></span> ROM Studio. We do not work on lost or locked devices, or bypass security protections. Terms provided on request.</p>
+  </footer>
+
+  <script>
+  document.getElementById('bookingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var phone = document.getElementById('phone').value;
+    var service = document.getElementById('service').value;
+    var device = document.getElementById('device').value;
+    var notes = document.getElementById('notes').value;
+
+    var message = `Name: ${name}\nPhone: ${phone}\nService: ${service}\nDevice: ${device}\nNotes: ${notes}`;
+    var whatsappLink = `https://wa.me/919322961032?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappLink, '_blank');
+  });
+</script>
+
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ROM Studio",
+    "image": "https://example.com/logo.png",
+    "description": "Professional custom ROM installation, root, debloat, and performance tuning in Mumbai with remote options.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Goregaon",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "areaServed": "IN",
+    "telephone": "+91-9322961032",
+    "url": "https://yourdomain.in",
+    "sameAs": ["https://wa.me/919322961032"],
+    "openingHours": "Mo-Su 10:00-20:00",
+    "priceRange": "₹₹"
+  }
+  </script>
+</body>
+</html>
